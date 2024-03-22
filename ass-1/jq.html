@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#hide").click(function(){
+                $("#box").hide(1000);
+            });
+            $("#show").click(function(){
+                $("#box").show(1000);
+            });
+            $("#toggle").click(function(){
+                $("#box").fadeToggle(1000);
+            });
+            $("#slideUp").click(function(){
+                $("#box").slideUp(1000);
+            });
+            $("#slideDown").click(function(){
+                $("#box").slideDown(1000);
+            });
+            $("#slideToggle").click(function(){
+                $("#box").slideToggle(1000);
+            });
+        });
+    </script>
+    <style>
+        button{cursor:pointer;}
+        #box{margin-bottom:5px;padding:12px;height:100px; width:150px; background-color:#09b3e7;}
+    </style>
+</head>
+<body>
+    <button id="hide">Hide Box</button>
+    <button id="show">Show Box</button>
+    <button id="toggle">Toggle Box</button>
+    <button id="slideUp">Slide Up</button>
+    <button id="slideDown">Slide Down</button>
+    <button id="slideToggle">Slide Toggle</button>
+    <div id="box">This is Box</div>
+</body>
+</html>
